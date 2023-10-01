@@ -1,0 +1,10 @@
+{
+    "name": "javie/konecta-server",
+    "description": "test",
+    "autoload": {
+        "psr-4": {
+            "Javie\\KonectaServer\\": "src/"
+        }
+    },
+    "require": {}
+}

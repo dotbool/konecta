@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script type = "text/javascript" src="registro.js"></script>
+    <link rel="stylesheet" href="registro.css">
+
+    <title>Registro</title>
+</head>
+
+<body>
+    <div class="container row">
+        <div class="container col-6 mt-5">
+            <div class="form-floating mb-3 row">
+                <input type="email" class="form-control" id="email" name = "email" placeholder="name@example.com">
+                <label for="floatingInput">Email address</label>
+                <div class="error invisible">Debe ser del tipo usuario@email.com</div>
+            </div>
+            <div class="form-floating row mb-3">
+                <input type="password" class="form-control" id="password" name="password" placeholder="4 o más carácteres">
+                <label for="floatingPassword">Password</label>
+                <div class="error invisible">contraseñas no coinciden o - de 4 caráct.</div>
+            </div>
+            <div class="form-floating row mb-3">
+                <input type="password" class="form-control" id="repassword" name="repassword" placeholder="Repita el password">
+                <label for="floatingPassword">Repita el password</label>
+                <div class="error invisible">Las contraseñas no coinciden</div>
+            </div>
+            <div class="form-floating mb-3 row">
+                <input type="text" class="form-control" id="nombre" name="nombre" placeholder="name@example.com">
+                <label for="nombre">nombre</label>
+                <div class="error invisible">Mínimo 2, Máximo 30 carácteres </div>
+            </div>
+            <div class="form-floating mb-3 row">
+                <input type="text" class="form-control" id="apellidos" name="apellidos" placeholder="apellidos">
+                <label for="apellidos">apellidos</label>
+                <div class="error invisible">Mínimo 2, Máximo 50 carácteres </div>
+            </div>
+            <div class="form-floating mb-3 row">
+                <input type="text" class="form-control" id="dni" name="dni" placeholder="dni">
+                <label for="dni">dni</label>
+                <div class="error invisible"> 8 dígitos y una letra </div>
+            </div>
+            <div class="form-floating mb-3 row">
+                <input type="date" class="form-control" id="fecha_nacimiento" name="fecha_nacimiento"
+                    placeholder="fecha_nacimiento">
+                <label for="fecha_nacimiento">fecha_nacimiento</label>
+                <div class="error invisible"> Debe haber nacido en el pasado </div>
+            </div>
+
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="actividad" id="activo">
+                <label class="form-check-label" for="activo">
+                    activo
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="actividad" id="inactivo" checked>
+                <label class="form-check-label" for="inactivo">
+                    inactivo
+                </label>
+            </div>
+            <div class="row">
+                <button type="button" class="btn btn-outline-primary mt-5" id = "btnRegistro">Registrar</button>
+            </div>
+        </div>
+        <div class="card col-4 mt-5" style="width: 10rem; height: 18rem" ;>
+            <img src="agregar-usuario.png" class="card-img-top mt-3" alt="...">
+            <div class="card-body">
+                <h5 class="card-title"></h5>
+                <p class="card-text"></p>
+                <a href="#" class="btn btn-primary">Añadir foto</a>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
